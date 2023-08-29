@@ -1,3 +1,5 @@
+import { SpacebarsCompiler } from "meteor/spacebars-compiler";
+
 Spacebars.toHTML = function(data, template) {
   var compiled = SpacebarsCompiler.compile(template, { isBody: true });
   var fn = eval(compiled);
